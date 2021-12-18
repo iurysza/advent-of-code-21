@@ -1,0 +1,32 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "AOC 21",
+  "main": "src/index.ts",
+  "scripts": {
+    "day01": "node src/day01.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iurysza/advent-of-code-21.git"
+  },
+  "keywords": [
+    "aoc21"
+  ],
+  "author": "Iury souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iurysza/advent-of-code-21/issues"
+  },
+  "homepage": "https://github.com/iurysza/advent-of-code-21#readme",
+  "dependencies": {
+    "@types/node": "^16.11.11"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.3"
+  }
+}

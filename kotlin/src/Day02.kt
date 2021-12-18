@@ -15,6 +15,7 @@ fun partOne(input: List<String>): Int = parseCommands(input).reduce { acc, comma
 
     val vertical = acc.getVertical()
     val forward = acc.getForward()
+
     when (command) {
         "up" -> acc["vertical"] = vertical + length * (-1)
         "down" -> acc["vertical"] = vertical + length
@@ -26,6 +27,9 @@ fun partOne(input: List<String>): Int = parseCommands(input).reduce { acc, comma
 
 fun partTwo(list: List<String>): Int {
     var aim = 0
+    listOf<String>(
+
+    )
     return parseCommands(list).reduce { acc, commandLength ->
         val command = commandLength.keys.first()
         val length = commandLength.values.first()
