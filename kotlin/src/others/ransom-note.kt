@@ -1,9 +1,8 @@
 //Input: ransomNote = "a", magazine = "b"
 //Output: false
 fun main() {
-
     inputList.forEach { (input, answer) ->
-        val isCorrect = Solution.canConstruct(input.ransomNote, input.magazine) == answer
+        val isCorrect = RansomNote.canConstruct(input.ransomNote, input.magazine) == answer
         if (!isCorrect) {
             throw Error("Wrong!\nInput: $input\t Answer: $answer")
         } else {
@@ -12,7 +11,7 @@ fun main() {
     }
 }
 
-object Solution {
+private object RansomNote {
     fun canConstruct(ransomNote: String, magazine: String): Boolean {
         var counter = 0
         val magazineText = hashMapOf<String, Int>()
@@ -37,24 +36,24 @@ object Solution {
 }
 
 
-val inputList = listOf(
-    Input(
+private val inputList = listOf(
+    RansomNoteInput(
         ransomNote = "a",
         magazine = "b",
     ) to false,
-    Input(
+    RansomNoteInput(
         ransomNote = "aa",
         magazine = "ab",
     ) to false,
-    Input(
+    RansomNoteInput(
         ransomNote = "aa",
         magazine = "aab",
     ) to true,
-    Input(
+    RansomNoteInput(
         ransomNote = "aab",
         magazine = "baa",
     ) to true,
 
     )
 
-data class Input(val ransomNote: String, val magazine: String)
+private data class RansomNoteInput(val ransomNote: String, val magazine: String)
